@@ -1,0 +1,12 @@
+[rewrite_local]
+# 百度网盘 解锁在线视频倍率/清晰度
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+# 美图秀秀vip功能
+^https?://(api|h5).xiuxiu.meitu.com/(v1/user/show.json|v1/vip/vip_show.json|v1/vip/prompt/query.json|v1/h5/vip/sub_detail.json|v1/h5/user/self_show.json|v1/h5/vip/user_detail.json|v1/vip/prompt/query.json|v1/vip/prompt/query.json) url script-response-body https://raw.githubusercontent.com/githubdulong/Script/master/Mtxx.js
+# 美颜相机紫钻vip
+^https://api.meiyan.com/vip/user_info url script-response-body https://raw.githubusercontent.com/zy-xiaoao/js/main/meiyan.js
+# WPS Office 解锁部分功能
+^https?:\/\/account\.wps\.cn\/api\/users url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+
+[mitm]
+hostname = pan.baidu.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.meiyan.com, account.wps.cn

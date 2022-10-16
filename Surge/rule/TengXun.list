@@ -1,0 +1,1 @@
+OR,((DOMAIN,pgdt.gtimg.cn), (AND,((USER-AGENT,live4iphoneRel*), (IP-CIDR,0.0.0.0/0,no-resolve)))),REJECT-DROP // 去腾讯视频开屏广告
